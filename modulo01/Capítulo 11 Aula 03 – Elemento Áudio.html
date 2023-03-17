@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 11 Aula 03 – Elemento Áudio</title>
+</head>
+<body>
+    <h1>Capítulo 11 Aula 03 – Elemento Áudio</h1>
+    <p>Uma das primeiras preocupações que temos ao colocar um áudio em nosso site, são os direitos autorais. Então, antes de incluir a midia, devemos saber qual a procedência e se podemos utilizar ela.</p>
+    <p>Devemos tomar um minuto de atenção também, para o tamanho do arquivo MP3/MP4. Lembrando que arquivos muito pesados, podem prejudir as buscas em algoritmos do google.</p>
+    <h2>Vamos reproduzir nosso áudio</h2>
+    <p>Aprendendo a reproduzir um áudio em HTML5.</p>
+    <!-- Para reproduzir um áudio, vamos utilizar a Tag <audio> -->
+    <audio preload="metadata" autoplay controls> <!-- Temos vários parametros para utilizar em audio, quando for necessario implementar ou aplicar um áudio em um site, verificar os parametros da tag. -->
+        <source src="/audios/We Wish You A Merry Christmas - DJ Williams.mp3" type="audio/mpeg">
+        <!-- Ele vai tentar carregar o áudio MP3, caso não carregue, ele ira tentar o próximo formato que tem disponível, no caso aqui, o OGG. -->
+        <source src="/audios/We Wish You A Merry Christmas - DJ Williams.ogg" type="audio/ogg">
+        <!-- Caso, o OGG também não carregue, então, tentara o WAV, o próximo formato disponível! -->
+        <source src="/audios/We Wish You A Merry Christmas - DJ Williams.wav" type="audio/wav">
+        <!-- Caso, não consiga carregar NENHUM dos formatos, ele informara, que o navegador, infelizmente não tem suporte para reproduzir o nosso áudio. -->
+        <p>Infelizmente, seu navegador não está reproduzindo nosso áudio!</p>
+        <!-- Obs. EVITE AO MAXIMO O ARQUIVO WAV. ele é um arquivo extremamente pesado. -->
+    </audio>
+</body>
+</html>
