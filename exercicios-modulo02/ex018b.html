@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 018 - Fontes com Google Fonts</title>
+    <style>
+        /* Para Utilizar fontes externas diretamente do Google */
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+        /* Para Criar nossa fonte externa personalizada dentro do nosso servidor. */
+        @font-face {
+            font-family: 'Pascoa';
+            src: url(/Fontes/EasterBunnyPersonalUse.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+
+        @font-face {
+            font-family: 'Pascoa2';
+            src: url(/Fontes/Glorious\ Easter\ TTF\ Personal.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body
+        {
+            font-family: sans-serif;
+            font-size: 1em;
+            color: black;
+        }
+        
+        h1
+        {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        h2
+        {
+            font-size: 3em;
+            font-family: 'Pascoa2';
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes com <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ea expedita dolor deleniti, animi tenetur odio voluptas. Beatae officia fugit porro excepturi eaque omnis modi cum aspernatur, quaerat expedita tenetur.</p>
+    <h1>Testando Fontes Externas (Baixadas) - <a href="https://www.dafont.com/pt/" target="_blank">DaFont.com</a></h2> <!-- o formato do arquivo que normalmente trabalhamos com fontes baixadas é o TTF. -->
+    <h2>Feliz Pascoa</h2>
+</body>
+</html>
