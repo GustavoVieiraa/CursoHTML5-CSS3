@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*
+    id em HTML5 é = # em CSS
+    class em HTML5 é = . em CSS
+
+    A regra é clara, id é para alterações expecificas e pontuais (utilizar uma id por elemento).
+    Agora, se for para aplicar em diversas situações parecidas, temos as class pra nós ajudar (pode aplicar em vários elementos).
+*/ 
+
+body {
+    background-color: #7777ff;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.titlePrincipal {
+    background-color: violet;
+    border-radius: 10px;
+    width: 10em;
+    text-align: center;
+}
+
+h1#titlePri {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+h1#exercicioTitle {
+    color: #ffffff;
+    text-align: right;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.htmlBasico {
+    background-color: chartreuse;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.htmlIntermediario {
+    background-color: orange;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.htmlAvancado {
+    background-color: tomato;
+    text-align: center;
+    border-radius: 10px;    
+}
+
+p {
+    text-align: justify;
+}
