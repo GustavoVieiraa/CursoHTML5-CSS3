@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: royalblue;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            transition: 0.2s;
+            margin: 5px;
+        }
+
+        a:visited { /* esse pseudo-classe é referente ao Link, após ser visitado. */
+         font-size: 1.1em;   
+        }
+
+        a:hover {
+            font-size: 1.1em;
+            transition: 0.2s;
+            color: black;
+        }
+
+        a:active { /* esse pseudo-classe é define o que acontece quando clicamos no Link.*/
+            color: purple;
+            font-size: 1.1em;
+        }
+
+        a::before {
+            content: ' -> ';
+        }
+
+        a::after {
+            content: ' [link] ';
+            text-decoration: none;
+            font-weight: 800;
+            color: yellow;
+        }
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+    </style>
+    <title>Capítulo 15 Aula 4 – CSS pseudo-elementos</title>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>
+            <a href="https://github.com/GustavoVieiraa" target="_blank">Repositorio GitHub</a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/gustvo_vieira/" target="_blank">Meu Perfil - Instagram</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/gustavo.vieira.50552338/" target="_blank">Meu Perfil - Facebook</a>
+        </li>
+    </ul>
+</body>
+</html>
