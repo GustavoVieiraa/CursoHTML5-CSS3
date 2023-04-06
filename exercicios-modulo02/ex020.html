@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body {
+            margin: 5%;
+        }
+
+        div {
+            background-color: brown;
+            text-align: center;
+            color: #ffffff;
+            border: 1px solid black;
+            height: 200px; /* height = altura */
+            width: 200px; /* width = largura */
+            display: inline-block; /* inline-block é tudo na mesma linha. */
+            margin: 2%;
+        }
+
+        div#t1 {
+            background-color: yellowgreen;
+            transition: 1s;
+        }
+
+        div#t2 {
+            background-color: orange;
+            transition: 1s;
+        }
+
+        div#t3 {
+            background-color: orangered;
+            transition: 1s;
+        }
+
+        div#t4 {
+            background-color: pink;
+            transition: 1s;
+        }
+
+        div#t5 {
+            background-color: navy;
+            transition: 1s;
+        }
+
+        div#t6 {
+            background-color: saddlebrown;
+            transition: 1s;
+        }
+
+        /*
+            Aprendemos que # é uma id (identificação)
+            . é uma class (classe)
+            e agora, vamos aprender que : são pseudo-classes.
+
+            Pseudo-classes são aplicadas em elementos, classes.
+        */
+
+        div#t1:hover {
+            background-color: yellowgreen;
+            transition: 0.5s;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 10px 3px 80px rgb(169, 253, 0);
+            margin: 0%;
+        }
+
+        div#t2:hover {
+            background-color: orange;
+            transition: 0.5s;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 80px orange;
+            margin: 0%;
+        }
+
+        div#t3:hover {
+            background-color: orangered;
+            transition: 0.5s;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 150px orangered;
+            margin: 0%;
+        }
+
+        div#t4:hover {
+            background-color: pink;
+            transition: 0.5s;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 150px purple;
+            margin: 0%;
+        }
+
+        div#t5:hover {
+            background-color: navy;
+            transition: 0.5s;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 150px navy;
+            margin: 0%;
+        }
+
+        div#t6:hover {
+            background-color: saddlebrown;
+            transition: 1s;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 150px saddlebrown;
+            margin: 0%;
+        }
+
+
+    </style>
+    <title>Capítulo 15 Aula 3 – CSS pseudo-class</title>
+</head>
+<body>
+    <div id="t1">01 - Teste</div>
+    <div id="t2">02 - Teste</div>
+    <div id="t3">03 - Teste</div>
+    <div id="t4">04 - Teste</div>
+    <div id="t5">05 - Teste</div>
+    <div id="t6">06 - Teste</div>
+</body>
+</html>
