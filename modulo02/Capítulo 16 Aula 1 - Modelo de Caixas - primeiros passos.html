@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .testeH1 {
+            background-color: red;
+        }
+
+        .testeH1secundario {
+            background-color: blue;
+        }
+
+    </style>
+    <title>Capítulo 16 Aula 1 – Modelo de Caixas: primeiros passos</title>
+</head>
+<body>
+    <h1 class="testeH1">Capítulo 16 Aula 1 – Modelo de Caixas: primeiros passos</h1>
+    <p>Nessa aula, vamos aprender sobre o Modelo de Caixas / Box model. É uma teoria super importante, para entendermos o box-size e a forma como os box são exibidos.</p>
+    <p>Quando utilizamos um elemento dentro do outro, o nome que damos para essa aplicação é <strong>aninhamento!</strong></p>
+    <p>Uma caixa, ela tem um tamanho, com medidas muito especificas e com palavras que as vezes se parecem muito, <strong>ALTURA = HEIGHT</strong> e <strong>LARGURA = WIDTH</strong></p>
+    <p>Também, podemos traçar uma linha em volta do nosso conteúdo (da nossa box), essa linha nós chamados de border (borda).</p>
+    <p>O espaço entre, a borda e o conteúdo, é chamado de padding (que pode ser chamado de acochoamento ou preenchimento), é como se a gente engordasse o elemento, para que a borda fique distante do conteúdo. <strong>Padding é o espaço interno de um elementro.</strong></p>
+    <p>Para um espaço entre elementros, nós temos a margin (margem). Ela nós ajuda e auxilia a distanciar elementos diferentes. <strong>Margin é o espaço externo de um elemento.</strong></p>
+    <p>Temos também o <strong>outline</strong> (traçado), ele é uma borda, só que fora do elemento.</p>
+    <h1 class="testeH1secundario">Tipos de Caixa</h1>
+    <p>O H1, por exemplo é um Tipo de Caixa, temos basicamente, dois tipos de caixas: 
+        <ul>
+            <li>BOX-LEVEL</li>
+                <ul>
+                    <li>Um box-level, ele sempre inicia em uma linha nova.</li>
+                    <li>O box-level, sempre ocupa a largura total da tela.</li>
+                    <li>Sempre que utilizamos uma <strong>DIV</strong>, estamos utilizando um box, do tipo box-level.</li>
+                    <ul> Exemplos de <strong>BOX-LEVEL</strong>
+                        <li>&lt;h1 - h6&gt;</li>
+                        <li>&lt;p&gt;</li>
+                        <li>&lt;main&gt;</li>
+                        <li>&lt;header&gt;</li>
+                        <li>&lt;nav&gt;</li>
+                        <li>&lt;article&gt;</li>
+                        <li>&lt;aside&gt;</li>
+                        <li>&lt;footer&gt;</li>
+                        <li>&lt;form&gt;</li>
+                        <li>&lt;video&gt;</li>
+                    </ul>
+                </ul>
+            <li>INLINE-LEVEL</li>
+                <ul>
+                    <li>O inline-level, não vai pular para uma próxima linha.</li>
+                    <li>E depois que finalizado, ele não quebra a linha.</li>
+                    <li>Sempre que utilizamos a TAG <strong>span</strong>, estamos utilizando um box, do tipo inline-level</li>
+                    <ul> Exemplos de <strong>INLINE-LEVEL</strong>
+                        <li>&lt;span&gt;</li>
+                        <li>&lt;a&gt;</li>
+                        <li>&lt;code&gt;</li>
+                        <li>&lt;small&gt;</li>
+                        <li>&lt;strong&gt;</li>
+                        <li>&lt;em&gt;</li>
+                        <li>&lt;sup&gt; - &lt;sub&gt;</li>
+                        <li>&lt;label&gt;</li>
+                        <li>&lt;button&gt;</li>
+                        <li>&lt;input&gt;</li>
+                        <li>&lt;select&gt;</li>
+                    </ul>
+                </ul>
+        </ul>
+    </p>
+</body>
+</html>
