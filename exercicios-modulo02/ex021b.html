@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Para bordas, padding, margin e outline, nós podemos simplificar e utilizar as shorthands para aplicar as propriedades. */
+
+        /* ordem para aplicação de shorthand é a mesma do relogio: top (cima) - right (direita) - bottom (baixo) - left (esquerda) */
+
+        body {
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            display: block;
+            margin: 40px auto 80px auto; /* margin: auto; faz com que a box já centralize no meio, automaticamente.    */
+            background-color: brown;
+            width: 300px;
+            text-align: center;
+            /* border aplicada em uma linha shorthand*/
+            border: 5px solid black;
+            /* 
+            border-width: 5px;  largura da borda
+            border-style: solid;  estilo da borda 
+            border-color: blue;  cor da borda 
+            */
+
+            /* outline é uma linha entre a borda e a margem. */
+            outline: 5px dashed blue; /* modelo de shorthand */
+            /*
+            outline-width: 5px;  largura da linha 
+            outline-style: dashed; estilo da linha
+            outline-color: red;  cor da linha 
+            */
+        }
+
+        a {
+            border: 5px solid salmon; /* aplicação de shorthand */
+            /*
+            border-width: 2.5px;  largura da borda
+            border-style: solid;  estilo da borda
+            border-color: red;  cor da borda 
+            */
+            padding: 5px 5px 5px 5px; /* aplicação de padding utilizando shorthand */
+        }
+
+    </style>
+    <title>Exerício 021b - Box-Level na prática (parte 2)</title>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-Level</h1> <!-- a tag <h1> é do tipo box-level. -->
+    <p>Paragráfos, também são exemplos de caixas box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <p>User Agent, é sempre o conteúdo que foi configurado automaticamente pelo nosso navegador. Todos os navegadores, tem uma configuração básica.</p>
+    <p>Display = "block" em CSS é o nosso box-level.</p>
+</body>
+</html>
