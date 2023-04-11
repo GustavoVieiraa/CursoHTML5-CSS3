@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: grey;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: tomato;
+            text-align: right;
+            padding: 20px;
+            box-shadow: 1px 3px 5px rgba(253, 109, 84, 0.527);
+        }
+
+        header h1 {
+            color: white;
+            font-family: monospace;
+            font-size: 2.5em;
+            padding: 1%;
+        }
+
+        header img {
+            width: 20px;
+        }
+
+        nav > a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-left: 12px;
+            font-size: 0.8em;
+        }
+
+        nav > a:hover {
+            transition: 0.5s;
+            font-size: 1em;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            background-color: #ffffff;
+        }
+        
+        main h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 1%;
+        }
+
+        article {
+            background-color: yellowgreen;
+            margin: 1%;
+            padding: 1%;
+            border-radius: 10px;
+        }
+
+        article > aside {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: white;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        footer p {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            padding: 1%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- o Header, o main, footer, são todos div's que nosso navegador vai interpretar melhor, com os mecanismos de buscas atuais. -->
+    <header> <!-- o Header é o nosso CABEÇALHO. -->
+        <!--<img src="/desafios/playlist-LilWhind/imagens/seta-voltar.png" alt="Teste"> -->
+        <h1>GV Desenvolvimentos</h1>
+        <nav> <!-- a Tag nav, podemos utilizar para a navegação dentro do nosso site! -->
+            <a href="#">Inicio</a>
+            <a href="#">Forum</a>                
+            <a href="#">Loja</a>                
+            <a href="#">Perfil</a>                
+        </nav>
+    </header>
+    <main> <!-- Temos o nosso conteúdo principal, que chamamos de Main -->
+        <h1>Grouping Tags</h1>
+        <section id="artigoMundial">
+            <article>
+                <h2>Como está o mundo?</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sit consequuntur eligendi aperiam at error tenetur dignissimos, eaque debitis distinctio voluptas similique, cum repudiandae. Earum provident dolores nam soluta asperiores!</p>
+                <aside>
+                    <p>Escrito por: Gustavo Vieira.</p>
+                </aside>
+            </article>
+        </section>
+        <section id="artigoCientifico">
+            <article>
+                <h2>Artigo Cientifico</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dicta culpa vero minima necessitatibus perspiciatis ducimus! Quasi possimus dolorem esse nihil est perferendis eveniet cumque obcaecati, ex velit consequuntur voluptatem.</p>
+                <aside>
+                    <p>Artigo divulgado por Gustavo Vieira</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer class="fixarRodape"> <!-- o Footer é o nosso RODAPÉ -->
+        <p>&copy; Desenvolvido por GV Desenvolvimentos</p>
+    </footer>
+</body>
+</html>
